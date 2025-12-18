@@ -98,8 +98,7 @@ const openModal = (product: ProductData | null = null) => {
 // TODO: 為 openDeleteModal 函式加上型別註解
 // 提示：參數 productId 是 string 型別，沒有回傳值
 const openDeleteModal = (productId: string): void => {
-  // deleteModalRef.value?.openModal(() => handleDeleteProduct(productId))
-  deleteModalRef.value?.openModal()
+  deleteModalRef.value?.openModal(() => handleDeleteProduct(productId))
 }
 
 // TODO: 為 handleDeleteProduct 函式加上型別註解
