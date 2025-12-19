@@ -49,7 +49,7 @@ onUnmounted(() => {
   }
 })
 
-const openModal = (onSave: (couponData: unknown) => Promise<void>) => {
+const openModal = (onSave: (couponData: CouponData) => Promise<void>) => {
   if (modal) {
     modal.show()
     onSaveCoupon = async (couponData) => {
